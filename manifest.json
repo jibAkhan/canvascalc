@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Canvas Grade Organizer",
+    "version": "1.0",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.instructure.com/*"],
+            "js": ["contentScript.js"]
+        }
+    ]
+}
