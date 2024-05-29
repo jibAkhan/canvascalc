@@ -16,7 +16,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["https://*.instructure.com/*"],
+            "matches": ["https://https://canvas.uh.edu/"],
             "js": ["contentScript.js"]
         }
     ]
